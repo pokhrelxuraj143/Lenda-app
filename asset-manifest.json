@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Lenda-app/static/css/main.e88626bd.css",
+    "main.js": "/Lenda-app/static/js/main.52420a9f.js",
+    "static/js/787.903f7551.chunk.js": "/Lenda-app/static/js/787.903f7551.chunk.js",
+    "static/media/hdr2.jpg": "/Lenda-app/static/media/hdr2.77303c90019550d32009.jpg",
+    "static/media/hdr1.jpg": "/Lenda-app/static/media/hdr1.c515ededd001b61f53ea.jpg",
+    "static/media/laptop.png": "/Lenda-app/static/media/laptop.2ff9bfa91962081182e0.png",
+    "static/media/02.png": "/Lenda-app/static/media/02.d0359523f9b44692d91a.png",
+    "static/media/03.png": "/Lenda-app/static/media/03.8715326c3ac696ec3e03.png",
+    "static/media/01.png": "/Lenda-app/static/media/01.0d284e3ba0a8b880a941.png",
+    "static/media/review.jpg": "/Lenda-app/static/media/review.2ba035b456f8dab9b2a4.jpg",
+    "static/media/about.jpg": "/Lenda-app/static/media/about.abca7360a4aae40fe356.jpg",
+    "static/media/step-2.JPG": "/Lenda-app/static/media/step-2.a1e993dcfb16fb611ce4.JPG",
+    "static/media/shape-4.png": "/Lenda-app/static/media/shape-4.03638a70db0b392668ac.png",
+    "index.html": "/Lenda-app/index.html",
+    "main.e88626bd.css.map": "/Lenda-app/static/css/main.e88626bd.css.map",
+    "main.52420a9f.js.map": "/Lenda-app/static/js/main.52420a9f.js.map",
+    "787.903f7551.chunk.js.map": "/Lenda-app/static/js/787.903f7551.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e88626bd.css",
+    "static/js/main.52420a9f.js"
+  ]
+}
