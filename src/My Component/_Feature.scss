@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #666666;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+$brand: #369BF4;
+$bl: #4C1C98;
+$w: #ffffff;
+$b: #000;
+$o: #FF4A17;
+
+
+//===============For Responsive==============>
+
+@mixin res992 {
+    @media screen and (max-width:992px){
+        @content;
+    }
+}
+
+@mixin res772 {
+    @media screen and (max-width:772px) {
+        @content;
+    }
+}
+
+@mixin res480 {
+    @media screen and (max-width:480px) {
+        @content;
+    }
+}
+
+
+
+
+
+//==========FBanner======>
+.f-banner {
+    position: relative;
+    height: 400px;
+    width: 100%;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $bl;
+        opacity: 0.8;
+
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .banner-inner {
+        width: 100%;
+        position: absolute;
+        top:40%;
+        left: 0;
+
+        .b-title {
+            font-weight:500;
+            font-size:40px;
+            text-align: center;
+            color: $w;
+            text-transform:capitalize;
+        }
+
+        ul{
+            list-style: none;
+            text-align: center;
+            margin-top: 20px;
+            li{
+                display: inline-block;
+                text-transform: capitalize;
+                padding-left: 15px;
+                font-size: 18px;
+                color: $w;
+
+                a{
+                    text-decoration: none;
+                    color: $w;
+                }
+                span{
+                    color: $o;
+                }
+            }
+        }
+    }
+}
+
+//========F-advance-feature================>
+
+.f-adv-feature {
+    margin-top:100px;
+    .container {
+
+        .t-heading {
+            color: $brand;
+            letter-spacing: 0.1rem;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .main-heading {
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            color: $b;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8rem;
+            margin-bottom: 40px;
+        }
+
+        .f-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-left: 0;
+
+            li {
+                border: 1px solid #6666667e;
+                height: 70px;
+                width: 250px;
+                display: flex;
+                align-items: center;
+                padding: 10px 25px;
+                font-size: 18px;
+                margin: 20px 0px;
+
+                @include res480{
+                    width: 100%;
+                }
+
+                i {
+                    font-size: 24px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+//==========f-features===========>
+.f-features{
+    .features-box{
+        text-align: center;
+        background: $brand;
+        color: $w;
+        padding:30px 5px;
+        margin:100px 0px;
+        border-radius: 10px;
+
+        @include res992{
+            margin:30px 0px ;
+        }
+        .features-icon{
+            position: relative;
+            width:70px;
+            height:70px;
+            background:#73B9F7;
+            border-radius: 50%;
+            margin: auto;
+
+
+            i{
+                font-size:30px;
+                color: $brand;
+                background: $w;
+                padding:8px 16px;
+                border-radius: 50%;
+               position: absolute;
+               top: 5px;
+               left:10px;
+            }
+        }
+
+        .features-disc{
+            margin-top: 20px;
+            h5{
+                font-weight: 900;
+                font-size:20px;
+                text-transform: capitalize;
+                letter-spacing:1px;
+                margin-bottom:20px;
+            }
+            p{
+                font-size: 18px;
+            }
+
+            a{
+                text-decoration: none;
+                color: $w;
+                text-transform: capitalize;
+                font-weight: 700;
+                font-size:18px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
